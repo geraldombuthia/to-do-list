@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="screen" id="screen-1">
+        <div class="index">
+            <h1>To-Do List 2.0</h1>
+            <cite>"Minding your business</br> Is our business"</cite></br>
+            <!--<p>Lets get to know you better...</p>
+  <input type="text" class="input" id="name" placeholder="Enter your Name"/>-->
+        </div>
+    </div>
+
+    <div class="screen" id="screen-2">
+        <h2>To-Do List 2.0</h2>
+        <!--
+prompt to get name
+<p> Welcome {name} lets get started<p>
+-->
+        <div class="btn_container">
+
+            <button class="btn" id="add">Add to list</button>
+            <button class="btn" id="view">View List</button>
+
+        </div>
+    </div>
+
+    <div class="screen" id="screen-3">
+        <div class="nav">
+            <h2>Add NewList</h2>
+            <button class="back_btn" id="back1">Back</button>
+        </div>
+        <form>
+            <!--       <label for="title">Title:</label> -->
+            <input type="text" class="input" id="title" placeholder="Enter Title" required>
+            <!--       <label for="task">Tasks:</label> -->
+            <input type="text" class="input" id="task" placeholder="Enter today's tasks" required>
+            <button type="submit" class="btn" id="submit">Submit</button>
+        </form>
+            <div class="lastView" id="lastView">
+                <!--   allows preview of added list -->
+            </div>
+    </div>
+
+    <div class="screen" id="screen-4">
+        <div class="nav">
+            <h2>View Lists</h2>
+            <button class="back_btn" id="back2">Back</button>
+        </div>
+        <div class="preview" id="preview">
+            <!--   allows preview of added list     -->
+        </div>
+    </div>
+
+    <div class="screen" id="screen-5">
+        <!--  Allows viewing and editing and deleting of tasks  -->
+    </div>
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
